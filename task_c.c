@@ -6,8 +6,16 @@ int main(void){
 	
 	
 	// Your code below here
-	printf("Vowel"); // place as needed in the code. You can use more than once.
-	print("Not vowel"); // place as needed in the code. You can use more than once.
+	char my_email[30] = "isaacjamesgardner@hotmail.com";
+	char letter = my_email[n]; //grabbing the character
+	char Vowels[5][1] = {"a", "e", "i", "o", "u"};
+	for (int i = 0; i < 5; i++){
+		if (letter == Vowels[i][0]){
+			printf("Vowel");
+			return 0;
+		}
+	} 
+	printf("Not vowel"); 
 	
 	
 	// Do not edit below here
