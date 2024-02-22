@@ -6,7 +6,7 @@ int main(void){
 	
 	
 	// Your code below here
-	if (n <= 0){ //cant have a negative index
+	if (n < 0){ //cant have a negative index
 		printf("Error");
 		return 1;
 	}
@@ -17,7 +17,7 @@ int main(void){
 	}
 
 	char my_email[30] = "isaacjamesgardner@hotmail.com";
-	char letter = my_email[n-1];
+	char letter = my_email[n];
 	char Vowels[5][1] = {"a", "e", "i", "o", "u"}; //I can check if letter is a vowel by searching for it within this array
 	for (int i = 0; i < 5; i++){
 		if (letter == Vowels[i][0]){ //if it is in the Vowels[] array, print vowel and return
